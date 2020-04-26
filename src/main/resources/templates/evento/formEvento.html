@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <title>Agenda Spring MVC</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <a class="waves-effect blue darken-2 btn" href="/"><i
+		class="material-icons right">keyboard_return</i>voltar</a>
+
+
+
+    <div class="row container">
+        <form method="post" class="col s12">
+
+            <div class="row">
+
+                <div class="input-field col s12">
+                    <input placeholder="Placeholder" id="local_evento" type="text" name="local">
+                    <label for="local_evento">Local</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <input placeholder="Placeholder" id="descricao_evento" type="text" name="descricao">
+                    <label for="descricao_evento">Descricao</label>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="input-field col s3">
+                    <input id="data_evento" type="date" name="data">
+                    <label for="data_evento">Data</label>
+                </div>
+
+                <div class="input-field col s3">
+                    <input id="horario_evento" type="time" name="horario">
+                    <label for="horario_evento">Horario</label>
+                </div>
+
+            </div>
+
+            <button style="float:right;" class="waves-effect blue darken-2 btn" type="submit">Enviar</button>
+
+        </form>
+    </div>
+
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+
+</html>
